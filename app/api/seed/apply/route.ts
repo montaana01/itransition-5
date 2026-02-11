@@ -18,7 +18,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
   try {
     const seed = parseSeedU64(body?.seed.toString());
-    return NextResponse.json({ ok: true, seed_u64: formatSeedU64Decimal(seed) }, { status: 200 });
+    return NextResponse.json({ ok: true, seed: formatSeedU64Decimal(seed) }, { status: 200 });
   } catch (e) {
     const msg = e instanceof Error ? e.message : 'Invalid seed.';
     return NextResponse.json(
