@@ -71,7 +71,7 @@ export function SeedForm({ initialSeed }: SeedFormProps) {
               type="button"
               onClick={() => void submitSeed()}
               disabled={loading}
-              className="shrink-0 rounded-lg border border-black-200 bg-white px-2 py-1 text-sm font-semibold text-black disabled:opacity-60"
+              className="shrink-0 rounded-lg border border-black-200 bg-white px-2 py-1 text-sm font-semibold text-black cursor-pointer disabled:opacity-60"
             >
               Apply
             </button>
@@ -80,7 +80,7 @@ export function SeedForm({ initialSeed }: SeedFormProps) {
             type="button"
             onClick={() => void randomSeed()}
             disabled={loading}
-            className="shrink-0 rounded-lg border border-white bg-black px-2 py-1 text-sm font-semibold text-white disabled:opacity-60"
+            className="shrink-0 rounded-lg border border-white bg-black px-2 py-1 text-sm font-semibold text-white cursor-pointer disabled:opacity-60"
           >
             Random
           </button>

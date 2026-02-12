@@ -94,7 +94,7 @@ export function LikeSelector(props: LikeSelectorProps) {
             step={0.1}
             value={average}
             onChange={(e) => setAverage(e.target.value)}
-            className="w-20 rounded-lg border border-white px-2 py-1 text-sm outline-none focus:border-gray-400"
+            className="w-20 rounded-lg border border-white px-2 py-1 text-sm outline-none cursor-pointer focus:border-gray-400"
           />
         </div>
       </div>
