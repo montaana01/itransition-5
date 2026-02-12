@@ -68,7 +68,7 @@ export function LikeSelector(props: LikeSelectorProps) {
 
   return (
     <>
-      <div className="flex items-center gap-1 flex-col w-80">
+      <div className="flex items-center gap-1 flex-col w-60">
         <label className="block text-sm font-semibold ">Likes avg</label>
         <div className="flex items-center gap-1">
           <div className="block w-20">
@@ -94,7 +94,7 @@ export function LikeSelector(props: LikeSelectorProps) {
             step={0.1}
             value={average}
             onChange={(e) => setAverage(e.target.value)}
-            className="w-20 rounded-lg border border-black px-2 py-1 text-sm outline-none focus:border-gray-400"
+            className="w-20 rounded-lg border border-white px-2 py-1 text-sm outline-none focus:border-gray-400"
           />
         </div>
       </div>
